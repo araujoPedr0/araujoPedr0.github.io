@@ -106,6 +106,4 @@ button{
 .content1:hover{
     transform: translate(3%);
     cursor: pointer;
-    box-shadow: 0px 0px 950px 0.2px #FFDF00;
-    border-radius: 15%;
 }
