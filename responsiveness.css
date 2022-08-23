@@ -1,0 +1,120 @@
+/*MOBILES-TABLET*/
+
+@media screen and (min-width: 1024px) {
+    .gridBC{
+        grid-template-columns: 1fr;
+    }
+
+    #top{
+        justify-content: center;
+    }
+
+    #pp{
+        width: 180px;
+        margin-right: 45px;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    p{
+        font-size: 25px;
+    }
+
+    #mail{
+        grid-area: mail;
+    }
+    #wpp{
+        grid-area: wpp;
+    }
+    #git{
+        grid-area: git;
+    }
+    #ig{
+        grid-area: ig;
+    }
+    #fb{
+        grid-area: fb;
+    }
+    #mid{
+        margin-top: 55px;
+        gap: 25px 0;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        'wpp git'
+        'ig fb'
+        'mail mail';
+    }
+}
+
+/*MOBILES-DESKTOP*/
+
+@media screen and (min-width: 1600px) {
+    .gridBC{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    #top{
+        grid-area: 1 / 2 / span 1 / span 2;
+        justify-content: center;
+    }
+
+
+    #pp{
+        grid-area: pp;
+        width: 180px;
+        margin-right: 45px;
+    }
+
+    .ppText{
+        grid-area: pptext;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    p{
+        font-size: 25px;
+    }
+
+    #mail{
+        grid-area: mail;
+    }
+    #wpp{
+        grid-area: wpp;
+    }
+    #git{
+        grid-area: git;
+    }
+    #ig{
+        grid-area: ig;
+    }
+    #fb{
+        grid-area: fb;
+    }
+    #mid{
+        margin-top: 55px;
+        gap: 25px 0;
+        grid-area: 2 / 2 / span 1 / span 2;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        'wpp git'
+        'ig fb'
+        'mail mail';
+    }
+
+    .faixa{
+        transition: 1s;
+    }
+
+    /*ANIMATION*/
+.faixa:hover{
+    backdrop-filter: blur(2.5px);
+    box-shadow: 0px 3px 17px 5px rgba(0, 0, 0, 0.185);
+    transform: scale(1.07);
+}
+
+}
+
