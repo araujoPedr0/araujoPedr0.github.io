@@ -3,7 +3,7 @@
 @media screen and (max-width: 320px) {
   
     .hero{
-        background-image: url(bg_img_gif_320.gif);
+        background-image: url(media/bg/bg_img_gif_320.gif);
     }
     
     .gridBC{
@@ -14,7 +14,7 @@
 
 @media screen and (max-width: 375px){
     .hero{
-        background-image: url(bg_img_gif_375.gif);
+        background-image: url(media/bg/bg_img_gif_375.gif);
     }
 
     .gridBC{
@@ -27,7 +27,7 @@
     .hero{
         min-height: 100vh;
         width: 100%;
-        background-image: url(bg_img_gif_1024.gif);
+        background-image: url(media/bg/bg_img_gif_1024.gif);
         background-position: center;
         background-repeat: no-repeat;   
     }
@@ -45,12 +45,26 @@
         padding: 0;
     }
 
+    #q-code{
+        margin: 0;
+        padding: 0;
+    
+        width: 55px;
+        z-index: 1;
+        position: absolute;
+        top: 07%;
+        left: 90%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
     .videoBg{
         width: 100%;
         height: 768px;
     }
 
     #top{
+        width: 600px;
         justify-content: center;
     }
 
@@ -99,6 +113,20 @@
     .gridBC{
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+
+    #q-code{
+        margin: 0;
+        padding: 0;
+    
+        width: 65px;
+        z-index: 1;
+        position: absolute;
+        top: 2%;
+        left: 72%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
 
     #top{
         grid-area: 1 / 2 / span 1 / span 2;
@@ -168,7 +196,7 @@
     .hero{
         min-height: 100vh;
         width: 100%;
-        background-image: url(bg_img_gif_1920.gif);
+        background-image: url(media/bg/bg_img_gif_1920.gif);
         background-position: center;
         background-repeat: no-repeat;  
          /*ALIGN*/
@@ -179,6 +207,20 @@
          margin-right: -50%;
          transform: translate(-50%, -50%); 
     }
+
+    #q-code{
+        margin: 0;
+        padding: 0;
+    
+        width: 70px;
+        z-index: 1;
+        position: absolute;
+        top: 1%;
+        left: 72%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
 
     #top{
         margin-bottom: 70px;
@@ -202,7 +244,7 @@
     .hero{
         min-height: 100vh;
         width: 100%;
-        background-image: url(bg_img_gif_1920.gif);
+        background-image: url(media/bg/bg_img_gif_1920.gif);
         background-position: center;
         background-repeat: no-repeat;  
          /*ALIGN*/
