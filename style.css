@@ -7,7 +7,7 @@
 .hero{
     min-height: 100vh;
     width: 100%;
-    background-image: url(bg_img_gif_1920.gif);
+    background-image: url(media/bg/bg_img_gif_1920.gif);
     background-position: center;
     background-repeat: no-repeat;    
 }
@@ -32,6 +32,25 @@
     justify-content: center;
     padding: 3% 0 3% 0;
     gap: 30px 0;
+    /*Align*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#q-code{
+    margin: 0;
+    padding: 0;
+
+    width: 55px;
+    z-index: 1;
+    position: absolute;
+    top: 12%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .videoBg{
@@ -46,6 +65,7 @@
 }
 
 #top{
+    width: 300px;   /*add after the align. also in responsiveness for 1024px (width)*/
     color: rgba(2, 2, 2, 0.671);
     display: grid;
     grid-template-columns: 45% 45%;
@@ -84,6 +104,7 @@ p{
     grid-template-rows: auto;
     justify-content: center;
     gap: 7px 0;
+
 }
 
 a{
@@ -113,11 +134,13 @@ a img{
 
 .devHolder{
     backdrop-filter: blur(10px);
-    margin: auto;
+    
 }
 
 .devHolder h3{
     font-size: 15px;
     text-align: center;
     color: rgba(255, 255, 255, 0.24);
+    z-index: -1;
+
 }
