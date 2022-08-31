@@ -1,0 +1,146 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+.hero{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(media/bg/bg_img_gif_1920.gif);
+    background-position: center;
+    background-repeat: no-repeat;    
+}
+
+/*body{
+    background-image: url(bg_img_gif_1920.gif);
+    background-size: cover;
+    /Align/
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}*/
+
+.gridBC{
+    column-gap: 10px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    padding: 3% 0 3% 0;
+    gap: 30px 0;
+    /*Align*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#q-code{
+    margin: 0;
+    padding: 0;
+
+    width: 55px;
+    z-index: 1;
+    position: absolute;
+    top: 12%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.videoBg{
+    
+    z-index: -1000;
+    position: absolute;
+    object-fit: fill;
+    min-height: 100vh;
+    width: 100%; 
+    left: 0;
+    top: 0;   
+}
+
+#top{
+    width: 300px;   /*add after the align. also in responsiveness for 1024px (width)*/
+    color: rgba(2, 2, 2, 0.671);
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 95%;
+    display: flex;
+    margin: 0 15px 0 15px;
+    gap: 60px 7px;
+    border-radius: 25px;
+    padding: 25px 10px 25px 10px;
+    backdrop-filter: blur(2.5px);
+    box-shadow: 0px 3px 17px 5px rgba(0, 0, 0, 0.185);
+}
+
+#pp{
+    border-radius: 100%;
+    width: 100px;
+    padding: 0 0 0 2px;
+}
+
+.ppText{
+    margin: auto 0 auto 0;
+}
+
+h1{
+    font-size: 15px;
+}
+
+p{
+    font-size: 12px;
+    font-style: italic;
+}
+
+#mid{
+    display: grid;
+    grid-template-columns: 90%;
+    grid-template-rows: auto;
+    justify-content: center;
+    gap: 7px 0;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+.faixa{
+    display: flex;
+    border-radius: 25px;
+    margin: auto;
+    width: 250px;
+    backdrop-filter: blur(1px);
+    box-shadow: 0px 3px 17px 5px rgba(0, 0, 0, 0.185);
+}
+
+h2{
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.753);
+    font-weight: 100;
+    margin: auto auto auto 0;
+}
+
+a img{
+    margin: auto auto auto 10px;
+    width: 55px;
+}
+
+.devHolder{
+    backdrop-filter: blur(10px);
+    
+}
+
+.devHolder h3{
+    font-size: 15px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.24);
+    z-index: -1;
+
+}

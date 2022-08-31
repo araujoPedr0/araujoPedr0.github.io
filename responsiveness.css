@@ -1,0 +1,269 @@
+/*MOBILES-TABLET*/
+
+@media screen and (max-width: 320px) {
+  
+    .hero{
+        background-image: url(media/bg/bg_img_gif_320.gif);
+    }
+    
+    .gridBC{
+        margin-bottom: 0;
+    }
+
+}
+
+@media screen and (max-width: 375px){
+    .hero{
+        background-image: url(media/bg/bg_img_gif_375.gif);
+    }
+
+    .gridBC{
+        padding-top: 60px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    
+    .hero{
+        min-height: 100vh;
+        width: 100%;
+        background-image: url(media/bg/bg_img_gif_1024.gif);
+        background-position: center;
+        background-repeat: no-repeat;   
+    }
+    
+    .gridBC{
+        grid-template-columns: 1fr;
+        padding-bottom: 0;
+        /*ALIGN*/
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        padding: 0;
+    }
+
+    #q-code{
+        margin: 0;
+        padding: 0;
+    
+        width: 55px;
+        z-index: 1;
+        position: absolute;
+        top: 07%;
+        left: 90%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .videoBg{
+        width: 100%;
+        height: 768px;
+    }
+
+    #top{
+        width: 600px;
+        justify-content: center;
+    }
+
+    #pp{
+        width: 180px;
+        margin-right: 45px;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    p{
+        font-size: 25px;
+    }
+
+    #mail{
+        grid-area: mail;
+    }
+    #wpp{
+        grid-area: wpp;
+    }
+    #git{
+        grid-area: git;
+    }
+    #ig{
+        grid-area: ig;
+    }
+    #fb{
+        grid-area: fb;
+    }
+    #mid{
+        margin-top: 55px;
+        gap: 25px 0;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        'wpp git'
+        'ig fb'
+        'mail mail';
+    }
+}
+
+/*MOBILES-DESKTOP*/
+
+@media screen and (min-width: 1600px) {
+    .gridBC{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    #q-code{
+        margin: 0;
+        padding: 0;
+    
+        width: 65px;
+        z-index: 1;
+        position: absolute;
+        top: 2%;
+        left: 72%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+        transition: 1s;
+    }
+
+
+    #top{
+        grid-area: 1 / 2 / span 1 / span 2;
+        justify-content: center;
+    }
+
+
+    #pp{
+        grid-area: pp;
+        width: 180px;
+        margin-right: 45px;
+    }
+
+    .ppText{
+        grid-area: pptext;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    p{
+        font-size: 25px;
+    }
+
+    #mail{
+        grid-area: mail;
+    }
+    #wpp{
+        grid-area: wpp;
+    }
+    #git{
+        grid-area: git;
+    }
+    #ig{
+        grid-area: ig;
+    }
+    #fb{
+        grid-area: fb;
+    }
+    #mid{
+        margin-top: 55px;
+        gap: 25px 0;
+        grid-area: 2 / 2 / span 1 / span 2;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        'wpp git'
+        'ig fb'
+        'mail mail';
+    }
+
+    .faixa{
+        transition: 1s;
+    }
+
+    /*ANIMATION*/
+.faixa:hover{
+    backdrop-filter: blur(2.5px);
+    box-shadow: 0px 3px 17px 5px rgba(0, 0, 0, 0.185);
+    transform: scale(1.07);
+}
+
+#q-code:hover{
+    
+    position: absolute;
+    top: -3%;
+    left: 72%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+}
+
+@media screen and (min-width: 1680px) {
+
+    .hero{
+        min-height: 100vh;
+        width: 100%;
+        background-image: url(media/bg/bg_img_gif_1920.gif);
+        background-position: center;
+        background-repeat: no-repeat;  
+         /*ALIGN*/
+         margin: 0;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         margin-right: -50%;
+         transform: translate(-50%, -50%); 
+    }
+
+    #q-code{
+        margin: 0;
+        padding: 0;
+    
+        width: 70px;
+        z-index: 1;
+        position: absolute;
+        top: 1%;
+        left: 72%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+
+    #top{
+        margin-bottom: 70px;
+    }
+
+    .faixa img{
+        width: 70px;
+    }
+
+    .faixa h2{
+        font-size: 35px;
+    }
+
+    .devHolder{
+        margin-top: 125px;
+    }
+
+}
+
+@media screen and (min-width: 1920px){
+    .hero{
+        min-height: 100vh;
+        width: 100%;
+        background-image: url(media/bg/bg_img_gif_1920.gif);
+        background-position: center;
+        background-repeat: no-repeat;  
+         /*ALIGN*/
+         margin: 0;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         margin-right: -50%;
+         transform: translate(-50%, -50%); 
+    }
+}
